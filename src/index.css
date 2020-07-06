@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-container {
+    display: flex;
+    width: 200px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container__image-container {
+    height: 50px;
+    width: 50px;
+}
+
+#logo-container__image-container--image {
+    height: 100%;
+    width: 100%;
+}
+
+#logo-container__text {
+    margin-top: 4%;
+}
+
+#main__image-container {
+    width: 500px;
+    height: 500px;
+}
+
+#main__image-container--image {
+    width: 80%;
+    height: 100%;
+}
