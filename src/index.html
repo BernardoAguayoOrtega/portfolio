@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="shortcut icon" href="https://img.icons8.com/cute-clipart/64/000000/b.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,46 +19,48 @@
             <p id="logo-container__text">
                 ernardo Aguayo</p>
         </div>
-        <nav>
-            <ul>
+        <nav class="nav-container">
+            <ul class="nav-container__list">
                 <li>
-                    <a href="/">Portfolio</a>
+                    <a class="nav-container__list__list-element-a" href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="/">work experience</a>
+                    <a class="nav-container__list__list-element-a" href="#about">about Bernardo Aguayo</a>
                 </li>
                 <li>
-                    <a href="/">Let's work together</a>
+                    <a class="nav-container__list__list-element-a" href="#contact">Let's work together</a>
                 </li>
             </ul>
         </nav>
     </header>
     <section class="main">
         <h1>
-            Hi! I'm <strong>Bernardo Aguayo</strong>, JavaScript </br> <strong>developer</strong> with </br><strong>passion</strong> to work for a better world
+            Hi! I'm <strong>Bernardo Aguayo,</br></strong> JavaScript <strong>developer</strong> with </br><strong>passion</strong> to work for a better world
         </h1>
         <div id="main__image-container">
             <img id="main__image-container--image" src="/img/bernardo.jpeg" alt="Just Bernardo Aguayo">
         </div>
     </section>
-    <section class="portfolio">
-        <h2>
-            Portfolio (Featured projects)
-        </h2>
-        <article>
-            <h3>
-                Some proyect
-            </h3>
-            <h6>
-                React Native
-            </h6>
-            <p><small><strong>Date:</strong>03/06/1999</small></p>
-            <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
-            <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
+    <section class="portfolio" id="portfolio">
+        <article class="portfolio__article">
+            <h2>
+                Portfolio (Featured projects)
+            </h2>
+            <div>
+                <h3>
+                    Some proyect
+                </h3>
+                <h6>
+                    React Native
+                </h6>
+                <p><small><strong>Date:</strong>03/06/1999</small></p>
+                <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
+                <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
+            </div>
             <img src="/" alt="some project">
         </article>
     </section>
-    <section class="events">
+    <section class="about" id="about">
         <h2>
             More about me
         </h2>
@@ -71,10 +74,18 @@
             <p>
                 I try to motivate and inspire people to follow their dreams
             </p>
-            <a href="/">watch videos</a>
+            <a href="https://www.youtube.com/user/yuco64/" target="Youtube">watch videos</a>
         </article>
     </section>
-    <section class="contact"></section>
+    <section class="contact" id="contact">
+        <h3>
+            ¿Trabajamos juntos?
+        </h3>
+        <form action="">
+            <input type="text" placeholder="Dejame tu email">
+            <button>Enviar</button>
+        </form>
+    </section>
     <footer></footer>
 </body>
 
