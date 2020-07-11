@@ -358,8 +358,8 @@
         }
         .about {
             background-color: #f8f7ff;
-            height: 100vh;
-            width: 100vw;
+            height: 100%;
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 60px 1fr 1fr 1fr;
@@ -374,6 +374,86 @@
         }
         .contact h4 {
             font-size: 22px;
+            margin-left: 5%;
+        }
+    }
+    
+    @media screen and (max-width: 375px) {
+        header {
+            background-color: #81b29a;
+            width: 100%;
+        }
+        .logo-container {
+            display: flex;
+            width: 200px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        #logo-container__image-container {
+            height: 50px;
+            width: 50px;
+        }
+        #logo-container__image-container--image {
+            height: 100%;
+            width: 100%;
+        }
+        #logo-container__text {
+            margin-top: 4%;
+            color: black;
+            font-weight: 900;
+        }
+        .nav-container__list {
+            display: grid;
+        }
+        .main {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            background-color: #F2CC8F
+        }
+        #main__image-container--image {
+            width: 80%;
+            height: 100%;
+            border-radius: 25px;
+            margin: 0 45px;
+        }
+        .main h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        .portfolio {
+            height: 100%;
+            width: 100%;
+            background-color: #f8f9fa;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 50px 1fr 1fr;
+            gap: 60px;
+        }
+        .about {
+            background-color: #f8f7ff;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 60px 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .contact {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 60px 500px 80px 30px;
+        }
+        .contact h4 {
+            font-size: 15px;
             margin-left: 5%;
         }
     }
