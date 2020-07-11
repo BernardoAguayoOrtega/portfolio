@@ -20,20 +20,14 @@
                 ernardo Aguayo</p>
         </div>
         <nav class="nav-container">
-            <ul class="nav-container__list">
-                <li>
-                    <a class="nav-container__list__list-element-a" href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a class="nav-container__list__list-element-a" href="#about">about Bernardo Aguayo</a>
-                </li>
-                <li>
-                    <a class="nav-container__list__list-element-a" href="#contact">Let's work together</a>
-                </li>
-            </ul>
+            <div class="nav-container__list">
+                <a class="nav-container__list__list-element-a" href="#portfolio">Portfolio</a>
+                <a class="nav-container__list__list-element-a" href="#about">about Bernardo Aguayo</a>
+                <a class="nav-container__list__list-element-a" href="#contact">Let's work together</a>
+            </div>
         </nav>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <h1>
             Hi! I'm <strong>Bernardo Aguayo,</br></strong> JavaScript <strong>developer</strong> with </br><strong>passion</strong> to work for a better world
         </h1>
@@ -42,10 +36,22 @@
         </div>
     </section>
     <section class="portfolio" id="portfolio">
-        <article class="portfolio__article">
-            <h2>
-                Portfolio (Featured projects)
-            </h2>
+        <h2>
+            Portfolio (Featured projects)
+        </h2>
+        <article id="portfolio__article-1">
+            <div>
+                <h3>
+                    Some proyect
+                </h3>
+                <h6>
+                    React Native
+                </h6>
+                <p><small><strong>Date:</strong>03/06/1999</small></p>
+                <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
+                <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
+        </article>
+        <article id="portfolio__article-2">
             <div>
                 <h3>
                     Some proyect
@@ -57,17 +63,39 @@
                 <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
                 <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
             </div>
-            <img src="/" alt="some project">
+        </article>
+        <article id="portfolio__article-3">
+            <div>
+                <h3>
+                    Some proyect
+                </h3>
+                <h6>
+                    React Native
+                </h6>
+                <p><small><strong>Date:</strong>03/06/1999</small></p>
+                <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
+                <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
+            </div>
+        </article>
+        <article id="portfolio__article-4">
+            <div>
+                <h3>
+                    Some proyect
+                </h3>
+                <h6>
+                    React Native
+                </h6>
+                <p><small><strong>Date:</strong>03/06/1999</small></p>
+                <p><small><strong>to see:</strong><a href="/">www.example.com</a></small></p>
+                <p><small><strong>Description:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo, eos doloribus minus cum harum.</small></p>
+            </div>
         </article>
     </section>
     <section class="about" id="about">
         <h2>
             More about me
         </h2>
-        <article>
-            <figure>
-                <img src="" alt="">
-            </figure>
+        <div id="about__info">
             <h3>
                 Youtube videos
             </h3>
@@ -75,18 +103,33 @@
                 I try to motivate and inspire people to follow their dreams
             </p>
             <a href="https://www.youtube.com/user/yuco64/" target="Youtube">watch videos</a>
-        </article>
+            </article>
+        </div>
+        <div id="about__first-video">
+            <iframe width="1351" height="480" src="https://www.youtube.com/embed/zORJpQ1Zq_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="about__second-video">
+            <iframe width="620" height="480" src="https://www.youtube.com/embed/1BYE0LApWqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="about__third-video">
+            <iframe width="620" height="480" src="https://www.youtube.com/embed/P4zk8JgO5hk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
     <section class="contact" id="contact">
-        <h3>
+        <h2>
             ¿Trabajamos juntos?
-        </h3>
-        <form action="">
-            <input type="text" placeholder="Dejame tu email">
-            <button>Enviar</button>
-        </form>
+        </h2>
+        <h4>
+            Puedes enviar un mensaje a: bernardo.aguayo.ortega@gmail.com
+        </h4>
+        <footer>
+            <a href="#main">
+                Bernardo Aguayo®
+            </a>
+        </footer>
     </section>
-    <footer></footer>
 </body>
 
 </html>
