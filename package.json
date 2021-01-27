@@ -1,11 +1,29 @@
 {
   "name": "work-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My work portfolio",
   "main": "index.html",
   "scripts": {
+    "save":"git add . && git commit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bernardo Aguayo",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/portfolio.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "js",
+    "css",
+    "webpack",
+    "react-testing",
+    "babel"
+  ],
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/portfolio/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/portfolio#readme"
 }
