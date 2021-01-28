@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Bernardo Aguayo Portfolio',
       template: './public/index.html',
     }),
   ],

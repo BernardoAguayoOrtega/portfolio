@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "save": "git add . && git commit",
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open --config ./webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bernardo Aguayo",
