@@ -1,20 +1,33 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const babelRules = {
-  test: /\.(js|jsx)$/,
-  loader: 'babel-loader',
-  exclude: /node_modules/,
+	test: /\.(js|jsx)$/,
+	loader: 'babel-loader',
+	exclude: /node_modules/,
+};
+
+const typeScriptRules = {
+	test: /\.tsx?$/,
+	use: 'ts-loader',
+	exclude: /node_modules/,
 };
 
 module.exports = {
-  entry: ['react-hot-loader/patch', './src/index.jsx'],
-  module: {
-    rules: [babelRules],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Bernardo Aguayo Portfolio',
-      template: './public/index.html',
-    }),
-  ],
+	entry: './src/index.tsx',
+	output: {
+		filename: 'bundle.[contentHash].js',
+	},
+	module: {
+		rules: [typeScriptRules],
+	},
+	resolve: {
+		extensions: ['.tsx', '.js', '.json'],
+	},
+	plugins: [
+		new HtmlWebPackPlugin({
+			title: 'Portfolio',
+			template: './public/index.html',
+		}),
+	],
 };
