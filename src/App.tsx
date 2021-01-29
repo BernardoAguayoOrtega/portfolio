@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
     return (
         <div>
             Hola mundo
         </div>
     )
 }
+export default App
