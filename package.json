@@ -9,7 +9,7 @@
     "dev:hot": "webpack-dev-server --open --hot --config ./webpack.config.dev.js",
     "format": "pretty-quick",
     "lint": "eslint ./",
-    "test": "react-scripts test"
+    "test": "react-scripts test --env=jsdom"
   },
   "author": "Bernardo Aguayo Ortega",
   "license": "MIT",
