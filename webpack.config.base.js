@@ -24,7 +24,7 @@ module.exports = {
     filename: 'bundle.[contentHash].js',
   },
   module: {
-    rules: [babelRules, typeScriptRules],
+    rules: [babelRules, typeScriptRules, cssRules],
   },
   resolve: {
     extensions: ['.tsx', '.js', '.json'],
