@@ -31,6 +31,13 @@
 
 .in {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  transition: 0.2s;
+}
+
+.out {
+  animation: tracking-out-contract 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  transition: 0.2s;
 }
 
 @keyframes tracking-in-expand {
@@ -48,18 +55,15 @@
   }
 }
 
-.out {
-  animation: tracking-out-contract 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
-}
-
 @keyframes tracking-out-contract {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     letter-spacing: -0.5em;
     opacity: 0;
