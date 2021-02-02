@@ -28,3 +28,40 @@
   font-weight: 300;
   margin: 0.5rem 0;
 }
+
+.in {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.out {
+  animation: tracking-out-contract 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}
+
+@keyframes tracking-out-contract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}

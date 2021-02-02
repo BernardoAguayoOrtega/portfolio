@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaDev } from 'react-icons/fa';
 import './styles.css';
+import { pronouns } from '../../utils/data/pronouns';
 
 const App: React.FC = () => {
+  const [actualText, setActualText] = useState(pronouns[0]);
+  const [isIn, setIsIn] = useState(false);
+
+  useEffect(() => {
+    let count = 1;
+
+    const timer = setInterval(() => {
+      if (count <= pronouns.length) {
+        const actualValue = pronouns[count];
+
+        setActualText((localValue) => (localValue = actualValue));
+        setIsIn((value) => !value);
+
+        count++;
+      }
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="container">
       <div className="content">
@@ -10,7 +30,7 @@ const App: React.FC = () => {
           <FaDev className="dev" />
         </i>
         <h2>Bernardo Aguayo</h2>
-        <p>changing text</p>
+        <p className={`${isIn ? 'in' : 'out'}`}>{actualText}</p>
         <button>button</button>
       </div>
     </div>
