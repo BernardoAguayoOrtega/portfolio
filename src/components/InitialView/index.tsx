@@ -18,6 +18,8 @@ const App: React.FC = () => {
         setIsIn((value) => !value);
 
         count++;
+      } else {
+        count = 0;
       }
     }, 2000);
     return () => clearInterval(timer);
@@ -30,7 +32,9 @@ const App: React.FC = () => {
           <FaDev className="dev" />
         </i>
         <h2>Bernardo Aguayo</h2>
-        <p className={`${isIn ? 'in' : 'out'}`}>{actualText}</p>
+        <div className="base">
+          <p className={`base ${isIn ? 'in' : 'out'}`}>{actualText}</p>
+        </div>
         <button>button</button>
       </div>
     </div>

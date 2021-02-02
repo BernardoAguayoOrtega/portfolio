@@ -23,7 +23,11 @@
   margin: 0.5rem 0;
 }
 
-.content > p {
+.base {
+  min-height: 2.5rem;
+}
+
+.base > p {
   font-size: 2rem;
   font-weight: 300;
   margin: 0.5rem 0;
