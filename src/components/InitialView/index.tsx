@@ -11,15 +11,15 @@ const App: React.FC = () => {
     let count = 1;
 
     const timer = setInterval(() => {
-      if (count <= pronouns.length) {
+      if (count === pronouns.length + 1) {
+        count = 0;
+      } else if (count <= pronouns.length) {
         const actualValue = pronouns[count];
 
         setActualText((localValue) => (localValue = actualValue));
         setIsIn((value) => !value);
 
         count++;
-      } else {
-        count = 0;
       }
     }, 2000);
     return () => clearInterval(timer);
@@ -33,7 +33,7 @@ const App: React.FC = () => {
         </i>
         <h2>Bernardo Aguayo</h2>
         <div className="base">
-          <p className={`base ${isIn ? 'in' : 'out'}`}>{actualText}</p>
+          <p className={`base ${isIn ? 'in' : 'focus'}`}>{actualText}</p>
         </div>
         <button>button</button>
       </div>

@@ -1,10 +1,7 @@
 export const pronouns = [
-  'abc',
-  'def',
-  'ghi',
-  'jkl',
-  'mno',
-  'pqr',
-  'stw',
-  'yxz',
+  'Software Engineer Frontend Team',
+  'Software Developer',
+  'Frontend Developer',
+  'Teacher',
+  'Developer',
 ];
