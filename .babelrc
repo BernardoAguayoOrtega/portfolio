@@ -11,7 +11,8 @@
       {
         "runtime": "automatic"
       }
-    ]
+    ],
+    ["@babel/preset-typescript"]
   ],
   "plugins": [["react-hot-loader/babel"]]
 }

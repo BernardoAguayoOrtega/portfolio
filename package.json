@@ -9,7 +9,7 @@
     "dev:hot": "webpack-dev-server --open --hot --config ./webpack.config.dev.js",
     "format": "pretty-quick",
     "lint": "eslint ./",
-    "test": "react-scripts test --env=jsdom"
+    "test": "jest"
   },
   "author": "Bernardo Aguayo Ortega",
   "license": "MIT",
@@ -34,6 +34,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.13",
     "@testing-library/react": "^11.2.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -46,6 +47,7 @@
     "eslint-plugin-react": "^7.22.0",
     "html-webpack-plugin": "^4.5.1",
     "husky": "^4.3.8",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "react-hot-loader": "^4.13.0",
@@ -71,6 +73,12 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
     }
   }
 }
