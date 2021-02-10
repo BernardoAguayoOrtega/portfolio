@@ -3,7 +3,7 @@ import { FaDev } from 'react-icons/fa';
 import './styles.css';
 import { pronouns } from '../../utils/data/pronouns';
 
-const App: React.FC = () => {
+const InitialView: React.FC = () => {
   const [actualText, setActualText] = useState(pronouns[0]);
   const [isIn, setIsIn] = useState(false);
 
@@ -26,7 +26,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container" data-testid="initialView">
       <div className="content">
         <i>
           <FaDev className="dev" />
@@ -40,4 +40,4 @@ const App: React.FC = () => {
     </div>
   );
 };
-export default App;
+export default InitialView;

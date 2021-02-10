@@ -4,9 +4,9 @@ import './styles.css';
 
 const App: React.FC = () => {
   return (
-    <div className="container">
-      <InitialView />
-    </div>
+    <main className="container">
+      <InitialView data-testid="initialView" />
+    </main>
   );
 };
 export default App;
