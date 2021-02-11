@@ -27,9 +27,9 @@ const InitialView: React.FC = () => {
 
   return (
     <div className="container" data-testid="initialView">
-      <div className="content">
+      <div className="content" data-testids="content">
         <i>
-          <FaDev className="dev" />
+          <FaDev id="dev" />
         </i>
         <h2>Bernardo Aguayo</h2>
         <div className="base">

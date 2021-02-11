@@ -2,7 +2,6 @@
 /* eslint-disable no-undef */
 import { getByTestId, render, screen } from '@testing-library/react';
 import App from '../../components/App/index';
-import InitialView from '../../components/InitialView/index';
 
 describe('<App />', () => {
   it('should render the app container', () => {

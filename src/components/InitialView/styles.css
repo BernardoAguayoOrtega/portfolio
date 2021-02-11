@@ -14,7 +14,7 @@
   padding: 1rem;
 }
 
-.content > i > .dev {
+.content > i > #dev {
   font-size: 10rem;
 }
 
